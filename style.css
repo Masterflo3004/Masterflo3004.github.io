@@ -9,3 +9,16 @@ body{
     size: 2%;
     
 }
+
+.TopNav{
+    background-color: blue;
+}
+.TopNav a{
+    color: aqua;
+}
+.Topnav a.active{
+    background-color: black;
+}
+.Topnav a:hover{
+    color:darkblue;
+}
