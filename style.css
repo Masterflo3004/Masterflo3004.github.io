@@ -14,14 +14,17 @@ body{
 .TopNav{
     background-color: blue;
     border-radius: 3%;
+    border-color: azure;
 }
 .TopNav a{
     color: aqua;
 }
 .Topnav a.active{
     background-color: black;
+    border-color:blueviolet;
 }
 .Topnav a:hover{
     color:darkblue;
     border-radius: 3%;
+    border-color: darkviolet;
 }
