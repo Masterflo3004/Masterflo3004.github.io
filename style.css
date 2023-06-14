@@ -13,6 +13,7 @@ body{
 
 .TopNav{
     background-color: blue;
+    border-radius: 3%;
 }
 .TopNav a{
     color: aqua;
@@ -22,4 +23,5 @@ body{
 }
 .Topnav a:hover{
     color:darkblue;
+    border-radius: 3%;
 }
