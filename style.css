@@ -1,9 +1,9 @@
 body{
-    background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/main_image_star-forming_region_carina_nircam_final-5mb.jpg);
+    
     background-size: auto;
     background-repeat: no-repeat;
     background-attachment:scroll;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 .Top{
     color: aqua;
