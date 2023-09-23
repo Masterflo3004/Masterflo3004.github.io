@@ -15,4 +15,6 @@
     background-color: gray;
     overflow-x: hidden;
     padding-top: 2%;
+    outline-width: 0.5%;
+    outline-color: black;
 }
