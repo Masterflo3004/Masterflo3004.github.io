@@ -19,3 +19,10 @@
     outline-color: black;
     outline-style: solid;
 }
+
+.topnav{
+    outline-style: solid;
+    outline-color: green;
+    outline-width: 0.1%;
+}
+
