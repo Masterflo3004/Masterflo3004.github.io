@@ -14,8 +14,9 @@
 .topnav a{
     padding: 1%;
     vertical-align: top;
-    font-size: 5%;
+    font-size: 100%;
 }
 .topnav a:hover{
     background-color: greenyellow;
+    
 }
