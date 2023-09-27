@@ -11,4 +11,9 @@
     outline-color: green;
     outline-width: 0.1%;
 }
-
+.topnav a{
+    padding: 1%;
+}
+.topnav a:hover{
+    background-color: greenyellow;
+}
