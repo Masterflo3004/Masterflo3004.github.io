@@ -13,6 +13,7 @@
 }
 .topnav a{
     padding: 1%;
+    vertical-align: top;
 }
 .topnav a:hover{
     background-color: greenyellow;
