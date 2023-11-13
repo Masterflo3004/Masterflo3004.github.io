@@ -19,10 +19,11 @@ body{
     padding: 1%;
     vertical-align: top;
     font-size: 300%;
+    color: aliceblue;
 }
 .topnav a:hover{
     background-color: greenyellow;
-    
+    color: aliceblue;
 }
 
 .active {
