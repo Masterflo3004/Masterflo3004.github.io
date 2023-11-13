@@ -1,5 +1,9 @@
 
 
+body{
+    background-color: blue;
+}
+
 .toplogo{
     width: 10%;
     height: 5%;
@@ -19,4 +23,8 @@
 .topnav a:hover{
     background-color: greenyellow;
     
+}
+
+.active {
+    background-color: green;
 }
