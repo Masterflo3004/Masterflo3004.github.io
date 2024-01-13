@@ -1,12 +1,7 @@
 
 
 body{
-    background-color: white;
-}
-
-.toplogo{
-    width: 10%;
-    height: 5%;
+    background-color: black;
 }
 
 
@@ -27,5 +22,12 @@ body{
 }
 
 .active {
-    background-color: green;
+    background-color: blue;
+}
+
+p{
+    color: greenyellow;
+}
+h4{
+    color: purple;
 }
