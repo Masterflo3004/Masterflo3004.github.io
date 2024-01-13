@@ -15,10 +15,12 @@ body{
     vertical-align: top;
     font-size: 300%;
     color: aliceblue;
+    font-family: monospace,Arial;
 }
 .topnav a:hover{
     background-color: greenyellow;
     color: aliceblue;
+    font-family: monospace,Arial;
 }
 
 .active {
@@ -27,10 +29,13 @@ body{
 
 p{
     color: greenyellow;
+    font-family: monospace, Arial;
 }
 h1{
     color: red;
+    font-family: monospace,Arial;
 }
 h4{
     color: purple;
+    font-family:monospace,Arial;
 }
