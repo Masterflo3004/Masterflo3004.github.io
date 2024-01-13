@@ -6,18 +6,18 @@ body{
 
 
 .topnav{
-    background-color: darkgrey;
+    background-color: #262626;
 }
 .topnav a{
     padding: 1%;
     vertical-align: top;
     font-size: 300%;
-    color: aliceblue;
+    color: orange;
     font-family: monospace,Arial;
 }
 .topnav a:hover{
-    background-color: greenyellow;
-    color: aliceblue;
+    background-color: orangered;
+    color: orange;
     font-family: monospace,Arial;
 }
 
