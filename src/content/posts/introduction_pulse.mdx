@@ -1,11 +1,67 @@
 ---
 title: "Introducing Pulselang"
-description: "Find out how to configure Spectre."
+description: "A simple and fast programming language built on Go"
 image: "../assets/spectre.png"
 createdAt: 02-26-2025
-draft: false
+draft: true
 tags:
-  - guide
+  - update
 ---
+#The Pulse programming language
+Hello everybody,
+In this Blog post I am going to present you the Pulse programming language.
+But befor I start, just a small note. This is heavy work in progress, and I cant promise that I will ever finish this language.
 
-Pulse is a under Developement programming language.
+But lets start.
+Pulse is going to use a "Node" based system. Comparable to Unreal Engines Blueprint or Unitys Bolt.
+This allows a simple understanding and simpler tracking of errors but also allows to put complex code and logic into a single node allowing users to connect via tcp in one or two nodes.
+
+##The Syntax
+Let us beginn with the most important thing of every language.
+
+####Events
+Pulse will be event driven. This means that parts of you code run at sertain events. For example there are going to be a start event (runs only once) and a update event (comparable with while(true))
+you can subscribe to an event by putting 
+`eventname <arguments> (outputs)`
+at the top of your code file
+For example a tcp listener will eventually be created understanding
+`tcp_listener_any_ip <port> (connection)`
+This will listen for a tcp request from any ip for a given `port` and return a tcp connection called `connection`.
+####Nodes
+Nodes are going to be the main part of every Pulse application.
+Nodes are based on thre parts. The inputs, the node, eventuall special arguments, and outputs.
+A example node sending a tcp packet into a tcp connection could look like:
+`(connection, message)send_tcp<>(connection1)`
+This Node takes 2  Input argument. First a tcp_connection (like returned by the Event above) and Secondly a message which then will be send via tcp. The  output is the same connection, but variables can only be used once.
+####Comments
+Like in a lot of other programming languages comment can be declared using \#
+
+##Technical Stuff
+So like you can see, Pulse is going to have a really simple, but powerfull syntax. But how is it going to work under the hood?
+While this is a thing I have still to think a lot about I already have some Ideas how it could work.
+
+#### Based on Go
+Pulse will be 100% based on go. Which means that everything will be made in go.
+So, the code of every Node, of Every Event and the compiler itself are going to be based on Go.
+But also the code Pulse gets compiled into will be Go code.
+This makes it simpler to create a powerfull language, because Events and Nodes are going to be able to use every existing (okay most existing) go packages, but it also makes writing the Compiler simpler and allows me to fucuss on the standard library and other packages.
+
+#### The generated code
+The code will generate a go package, which can easly get compiled and run using go.
+It will be using goroutines for running different code parts and events independently.
+
+Files:
+Because every Event the code listens to requires creating a file the Compiler createsa lot of files.
+First, every event the code lsitens to will be its own function in its own file.
+For example if you have code which listens to the main and to the update Event, it will create the Files
+`
+event_main.go
+`
+and
+
+`
+event_update.go
+`
+
+Thee will contain one function named after the event.
+
