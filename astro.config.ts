@@ -19,10 +19,10 @@ export default defineConfig({
     mdx(),
     sitemap(),
     spectre({
-      name: 'Masterflo3004',
+      name: 'Florian Stüttgen',
       openGraph: {
         home: {
-          title: 'Masterflo3004',
+          title: 'Florian Stüttgen',
           description: 'Just a guy interestred in Programming.'
         },
         blog: {
