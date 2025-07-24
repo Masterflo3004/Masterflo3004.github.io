@@ -23,11 +23,11 @@ export default defineConfig({
       openGraph: {
         home: {
           title: 'Florian Stüttgen',
-          description: 'Just a guy interestred in Programming.'
+          description: 'Einfach jemand der  sich für Technik interessiert.'
         },
         blog: {
           title: 'Blog',
-          description: 'Just news about my projects.'
+          description: 'Spannende Dinge aus meinem Leben.'
         },
         projects: {
           title: 'Projects'
