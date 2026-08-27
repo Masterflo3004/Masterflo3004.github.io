@@ -2,7 +2,7 @@
 import RootLayout from "../layouts/RootLayout.astro";
 import { getCollection } from "astro:content";
 import { Icon } from "astro-icon/components";
-import siteConfig from '../../content/site.json';
+import siteConfig from "../../content/site.json";
 import Card from "@/components/Card.astro";
 import PostCard from "../components/PostCard.astro";
 import BigAvatar from "@/components/avatar.svg";
@@ -17,13 +17,14 @@ const posts = (await getCollection("blog"))
 
 <RootLayout title={SITE_TITLE} description={SITE_DESCRIPTION} width="md">
     <Card id="avatar-bio">
-        <BigAvatar class="big-avatar"/>
+        <BigAvatar class="big-avatar" />
         <section id="bio">
             <h2 class="emphasize">
                 {SITE_TITLE}
             </h2>
             <p>
-                Willkommen, dies ist meine Website übber alles was mich interessiert.
+                Willkommen, dies ist meine Website über alles was mich
+                interessiert.
             </p>
             <!-- <div>
                 <p>
@@ -63,11 +64,7 @@ const posts = (await getCollection("blog"))
         <h3>Angepinnte posts</h3>
     </Card>
     <section id="pinned-container">
-        {
-            posts.map((post) => (
-                <PostCard {...post.data} slug={post.id} />
-            ))
-        }
+        {posts.map((post) => <PostCard {...post.data} slug={post.id} />)}
     </section>
 </RootLayout>
 
@@ -146,9 +143,9 @@ const posts = (await getCollection("blog"))
         }
     }
 
-    [data-icon="simple-icons:misskey"]{
+    [data-icon="simple-icons:misskey"] {
         * {
-            color: #A1CA03 !important;
+            color: #a1ca03 !important;
         }
     }
 

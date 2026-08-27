@@ -39,6 +39,6 @@ export default defineConfig({
       }
     }
   },
-  site: 'https://Masterflo3004.github.io',
+  site: 'masterflo3004.github.io',
   integrations: [expressiveCode(), mdx(), sitemap(), svelte(), icon()]
 });
